@@ -1,8 +1,41 @@
-<style>
-    body {
-        margin: 0;
-    }
-</style>
-<canvas></canvas>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-<script src="index.js"></script>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        min-height: 100dvh;
+        background: #111;
+      }
+
+      canvas {
+        display: block;
+        width: min(100vw, 177.78vh);
+        width: min(100vw, 177.78dvh);
+        height: auto;
+      }
+    </style>
+    <canvas></canvas>
+  </body>
+</html>
